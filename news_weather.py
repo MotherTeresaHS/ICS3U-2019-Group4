@@ -9,10 +9,11 @@ from tkinter import *
 from tkinter.ttk import *
 from time import strftime
 import datetime
+import requests
 # from PIL import ImageTk,Image
 
 root = Tk() 
-root.title('Weather')
+root.title('Smart Clock')
 # root.configure(background = "black")
 # root.geometry("320x480")
 
@@ -42,6 +43,31 @@ root.title('Weather')
 #label.grid(row = 14, column = 2)
 
 
+def news():
+    # This program runs the news
+
+    root.configure(background="black")
+    label = Label(root, text="NEWS", font=('calibri', 25),
+                  foreground='white', background='black')
+    label.pack()
+
+    url = 'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apikey=e4ba43e5a4e54ab8a1d130127eeb888a'
+
+    # Make the request
+    response = requests.get(url).json()
+
+    article = response["articles"]
+    # Convert the response to JSON format and pretty print it
+    results = []
+    lstbox = Listbox(root)
+    lstbox.config(bg='black', fg='white', width='100', height='30',
+                  font='Helvetica')
+    lstbox.pack()
+
+    for item in article:
+        lstbox.insert(END, item['title'], "\ndetails: ", item['description'])
+
+
 def weather():
     # This
 
@@ -64,8 +90,6 @@ def weather():
     label17 = Label(root, text = "", font = ('calibri', 12),  foreground = 'white', background = 'sky blue')
     label20 = Label(root, text = "location : ", font = ('calibri', 16),  foreground = 'white', background = 'sky blue')
     label21 = Label(root, text = "", font = ('calibri', 12),  foreground = 'white', background = 'sky blue')
-
-
 
     label.grid(row = 1, column = 1)
     label2.grid(row = 5, column = 0)
