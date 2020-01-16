@@ -108,18 +108,6 @@ def weather():
     rain = ottawa.will_have_rain()
     snow = ottawa.will_have_snow()
 
-    #if clouds == 1:
-     #   img = Image.open(r'C:\\Users\\marwa\\Downloads\\clearSky.jpg') 
-      #  tkimage = ImageTk.PhotoImage(img)
-       # img = img.resize((250, 250), Image.ANTIALIAS)
-        #tkimage.geometry("120x80")
-        #Label(root, image=tkimage, text=" There is clouds today").grid(row = 5, column = 2) # Put it in the display window
-   # else:
-    #    img = Image.open(r'C:\\Users\\marwa\\Downloads\\clearSky.jpg') 
-     #   tkimage = ImageTk.PhotoImage(img)
-      #  img = img.resize((250, 250), Image.ANTIALIAS)
-        #tkimage.geometry("120x80")
-       # Label(root, image=tkimage, text=" There is no clouds today").grid(row = 5, column = 2) # Put it in the display window
 
     if rain == 1:
         rain = "there is rain today"
@@ -162,7 +150,7 @@ def weather():
 def main():
     #
 
-    label18 = Label(root, text = "Sun: ", font = ('calibri', 16),  foreground = 'white', background = 'black')
+    label18 = Label(root, text = " ", font = ('calibri', 16),  foreground = 'white', background = 'black')
     label18.grid(row = 1, column = 0)
     string = strftime('%H:%M:%S \n%d-%m-%Y')
     label18.config(text=string)
