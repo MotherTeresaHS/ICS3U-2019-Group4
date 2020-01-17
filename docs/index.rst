@@ -9,9 +9,9 @@ Home
     </iframe>
   </div>
 
-In this project we will be making a smart clock for the `Raspbbery pi <https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/>`_. We will be using an app that we will build using `Tkinter module <https://docs.python.org/2/library/tkinter.html>`  to create a `Space Invaders <https://en.wikipedia.org/wiki/Space_Invaders>`_ like game. The stage library makes it easy to make classic video games, with helper libraries for sound, sprites and collision detection. The app can also work on other variants of devices, like windows and mac. The full completed game code with all the assets can be found `here <https://github.com/MotherTeresaHS/ICS3U-2019-Group4>`_.
+In this project we will be making a smart clock for the `Raspbbery pi <https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/>`_. We will be using an app that we will build using `Tkinter module <https://docs.python.org/2/library/tkinter.html>`  to create a smart clock. The we will be using more than one library to make it easy to the clock and other widgets, with helper libraries for sound. The app can also work on other variants of devices, like windows and mac. The full completed app code can be found `here <https://github.com/MotherTeresaHS/ICS3U-2019-Group4>`_.
 
-The guide assumes that you have prior coding experience, hopefully in Python. It is designed to use just introductory concepts. No Object Oriented Programming (OOP) are used so that students in particular that have completed their first course in coding and know just variables, if statements, loops and functions will be able to follow along.
+The guide assumes that you have prior coding experience, hopefully in Python. It is designed to use just introductory concepts. No Object Oriented Programming (OOP) are used so that students in particular that have completed their first course in coding and know just variables, if statements, loops, functions and dictionaries will be able to follow along.
 
 **Parts**
 
@@ -129,7 +129,8 @@ You might also want:
 
     `3D Printed Case <https://www.tinkercad.com/things/fHOWOY88j9A?utm_source=externalsite&utm_medium=embedver1&utm_campaign=embed>`_
 
-    I did not create this case. I `altered Adafruit's design <https://learn.adafruit.com/pybadge-case/>`_. One of the screw posts was hitting the built in speaker and the case was not closing properly. I also added a piece of plastic over the display ribbon cable, to keep it better protected. You will need 4 x 3M screws to hold the case together.
+    I created this case and it's based on the mesurments of the raspberrypi, the breadboard and the lcd screen I am using. You will need 3 x 4 screws to connect the parts together
+    
 
 .. toctree::
   :maxdepth: 2
