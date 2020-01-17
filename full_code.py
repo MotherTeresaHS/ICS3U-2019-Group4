@@ -7,6 +7,7 @@
 import pyowm
 from tkinter import *
 from tkinter.ttk import *
+import tkinter as tk
 from time import strftime
 import datetime
 import requests
@@ -21,27 +22,22 @@ root.title('Smart Clock')
 button1 = Button(26)
 button2 = Button(19)
 button3 = Button(6)
+button4 = Button(5)
 
-news_frame = Frame(root)
+news_frame = tk.Frame(root, bg = 'black')
 news_frame.grid()
 
-weather_frame = Frame(root)
+weather_frame = tk.Frame(root, bg = 'sky blue')
 weather_frame.grid()
 
-clock_frame = Frame(root)
+clock_frame = tk.Frame(root, bg = 'black')
 clock_frame.grid()
+
 # root.geometry("320x480")
-
-# opening images getting them ready
-# img = Image.open(r'rain.jpg')
-
-
-# adding an image to tkinter
-
 
 
 def news():
-    # This program runs the news
+    # This function runs the news
 
     
     root.configure(background="black")
@@ -55,7 +51,7 @@ def news():
     response = requests.get(url).json()
 
     article = response["articles"]
-    # Convert the response to JSON format and pretty print it
+    # Convert the response to JSON format
 
     lstbox = Listbox(news_frame)
     lstbox.config(bg='black', fg='white', width='100', height='30',
@@ -111,10 +107,6 @@ def forecast():
     label20.grid(row = 13, column = 0)
     label21.grid(row = 13, column = 2)
 
-
-    
-
-
     owm = pyowm.OWM('3a65677897148889d39423a3ce8e1716')  # You MUST provide a valid API key
     ottawa = owm.three_hours_forecast('Ottawa, Canada')
 
@@ -125,46 +117,31 @@ def forecast():
     fog = ottawa.will_have_fog()
     rain = ottawa.will_have_rain()
     snow = ottawa.will_have_snow()
-
-    #if clouds == 1:
-     #   img = Image.open(r'C:\\Users\\marwa\\Downloads\\clearSky.jpg')
-      #  tkimage = ImageTk.PhotoImage(img)
-       # img = img.resize((250, 250), Image.ANTIALIAS)
-        #tkimage.geometry("120x80")
-        #Label(root, image=tkimage, text=" There is clouds today").grid(row = 5, column = 2) # Put it in the display window
-   # else:
-    #    img = Image.open(r'C:\\Users\\marwa\\Downloads\\clearSky.jpg')
-     #   tkimage = ImageTk.PhotoImage(img)
-      #  img = img.resize((250, 250), Image.ANTIALIAS)
-        #tkimage.geometry("120x80")
-       # Label(root, image=tkimage, text=" There is no clouds today").grid(row = 5, column = 2) # Put it in the display window
     
-    if snow == 1:
+    if snow == 1 or clouds and snow == 1:
         load = Image.open("snow.jpeg")
         render = ImageTk.PhotoImage(load)
-        img = Label(weather_frame, image=render)
+        img = Label(root, image=render)
         img.image = render
-        img.place(x=600, y=40)
-    if clouds == 1:
-        load = Image.open("clouds.jpeg")
+        img.place(x=650, y=40)
+    elif clouds == 0:
+        load = Image.open("sun.jpeg")
         render = ImageTk.PhotoImage(load)
-        img = Label(weather_frame, image=render)
+        img = Label(root, image=render)
         img.image = render
-        img.place(x=600, y=40)
-    else:
+        img.place(x=650, y=40)
+    if snow and rain and clouds == 1:
+        Image.open("mix.jpeg")
+        render = ImageTk.PhotoImage(load)
+        img = Label(root, image=render)
+        img.image = render
+        img.place(x=650, y=40)
+    elif clouds == 0:
         Image.open("sun.jpeg")
         render = ImageTk.PhotoImage(load)
-        img = Label(weather_frame, image=render)
+        img = Label(root, image=render)
         img.image = render
-        img.place(x=600, y=40)
-    if clouds == 1 and snow == 1:
-        Image.open("cloudSnow.jpeg")
-        render = ImageTk.PhotoImage(load)
-        img = Label(weather_frame, image=render)
-        img.image = render
-        img.place(x=600, y=40)
-     
-
+        img.place(x=650, y=40)
 
     if rain == 1:
         rain = "there is rain today"
@@ -225,6 +202,11 @@ def main():
         forecast()
     if button3.is_pressed:
         import alarm
+    if button4.is_pressed:
+        news_frame.grid_forget()
+        weather_frame.grid_forget()
+        clock_frame.grid()
+        main()
         
 
 if __name__ == "__main__":

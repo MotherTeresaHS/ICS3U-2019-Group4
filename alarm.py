@@ -2,9 +2,10 @@
 from tkinter import *
 from tkinter import ttk
 import time
-import os
-from tkinter import messagebox
 from playsound import playsound
+from pydub import AudioSegment
+from pydub.playback import play
+#import os
 
 
 #def main():
@@ -13,25 +14,30 @@ root.title("Alarm clock")
 
 
 def SubmitButton():
-  label3 = Label(root, text = "", font = ('calibri', 12), foreground = 'white', background = 'sky blue')
-  label4 = Label(root, text = "", font = ('calibri', 12), foreground = 'white', background = 'sky blue')
-  AlarmTime= entry1.get()
-  Message1()
+    label3 = Label(root, text = "", font = ('calibri', 12), foreground = 'white', background = 'sky blue')
+    label4 = Label(root, text = "", font = ('calibri', 12), foreground = 'white', background = 'sky blue')
+    AlarmTime= entry1.get()
+    Message1()
   #label2.config(text ="The Alarm will Ring at {} ".format(AlarmTime))  #delayed in execution
-  CurrentTime = time.strftime("%H:%M")
-  label3.config(text = "the alarm time is: {}".format(AlarmTime))
-  label3.pack()
-  #label2.config(text="")
-  while AlarmTime != CurrentTime:
-    #label2.config(text ="The Alarm will Ring at {} ".format(AlarmTime))
     CurrentTime = time.strftime("%H:%M")
-    time.sleep(1)
-  if AlarmTime == CurrentTime:
-     label4.config(text = "now Alarm Musing Playing")
-     #os.system("start alarm-music.mp3")
-     playsound('alarm-music.mp3')
+    label3.config(text = "the alarm time is: {}".format(AlarmTime))
+    label3.pack()
+    #label2.config(text="")
+    while AlarmTime != CurrentTime:
+    #label2.config(text ="The Alarm will Ring at {} ".format(AlarmTime))
+        CurrentTime = time.strftime("%H:%M")
+        time.sleep(1)
+        if AlarmTime == CurrentTime:
+            label4.config(text = "now Alarm Musing Playing")
+            #os.system("omxplayer alarm-music.mp3")
+            label2.config(text = "Alarm music playing...")
+            sound = AudioSegment.from_wav('alarm-music.wav')
+            play(sound)
+           # playsound('alarm-music.wav')
+           # pygame.mixer.Sound.play(sound)
+           # pygame.mixer.music.stop()
      # you can also put the path of the mp3 or wav file if it didn't work
-     label2.config(text = "Alarm music playing.....")
+         
      #label5 = Label(title= 'Alarm Message', message= "{}".format(entry2.get()))
      #label5.pack()
 
@@ -68,3 +74,4 @@ label2.pack()
 #label2.config(text="hello")
 
 root.mainloop()
+
