@@ -13,6 +13,7 @@ import datetime
 import requests
 from PIL import ImageTk,Image
 from gpiozero import Button
+from tkcalendar import Calendar, DateEntry
 
 
 root = Tk()
@@ -180,6 +181,23 @@ def forecast():
 
     cloud_cov =  weather.get_clouds()
     label17.config(text = cloud_cov)
+
+def calendar():
+
+  #  top = tk.Toplevel(root)
+
+    cal = Calendar(root, selectmode='none')
+    date = cal.datetime.today() + cal.timedelta(days=2)
+  #  cal.calevent_create(date, 'Hello World', 'message')
+   # cal.calevent_create(date, 'meeting', 'reminder')
+   # cal.calevent_create(date + cal.timedelta(days=-2), 'Reminder 1', 'reminder')
+   # cal.calevent_create(date + cal.timedelta(days=3), 'Message', 'message')
+
+  #  cal.tag_config('reminder', background='red', foreground='yellow')
+
+
+    cal.grid()
+    #ttk.Label(root, text="Hover over the events.").pack()
 
 def main():
     #

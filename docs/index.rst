@@ -21,20 +21,114 @@ You will need the following items:
 
   .. container:: leftside
 
-    .. image:: ./images/4200-01.jpg
+    .. image:: ./images/raspberry pi.jfif
       :width: 320 px
       :height: 240 px
-      :alt: PyBadge
+      :alt: Raspbbery Pi 3 B+
       :align: left
 
   .. container:: rightside
 
-    `Adafruit PyBadge for MakeCode Arcade, CircuitPython or Arduino <https://www.adafruit.com/product/4200>`_
+    `Raspbbery pi 3 B+ <https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/>`_
     
-    PRODUCT ID: 4200
 
 |
 |
+|
+|
+|
+|
+|
+
+
+.. container:: twocol
+
+  .. container:: leftside
+
+    .. image:: ./images/lcd screen.jfif
+      :width: 320 px
+      :height: 240 px
+      :alt: LCD Screen
+      :align: left
+
+  .. container:: rightside
+
+    `3.5 inch LCD screen <https://www.waveshare.com/3.5inch-rpi-lcd-a.htm>`_
+    
+
+|
+|
+|
+|
+|
+|
+|
+
+
+.. container:: twocol
+
+  .. container:: leftside
+
+    .. image:: ./images/push button.jfif
+      :width: 320 px
+      :height: 240 px
+      :alt: push button
+      :align: left
+
+  .. container:: rightside
+
+    `push button <https://www.amazon.com/6x6x6mm-Momentary-Push-Button-Switch/dp/B01GN79QF8?ref_=fsclp_pl_dp_12>`_
+    
+
+|
+|
+|
+|
+|
+|
+|
+
+
+.. container:: twocol
+
+  .. container:: leftside
+
+    .. image:: ./images/charger.jfif
+      :width: 320 px
+      :height: 240 px
+      :alt: Power supply
+      :align: left
+
+  .. container:: rightside
+
+    ` Raspberry Pi 3B+ 3B Power Supply - 1.5 meter long <https://www.amazon.ca/Official-Raspberry-Pi-Supply-Version/dp/B01NCX6J2N>`_ 
+    
+
+    So you can power up the raspberry pi
+
+|
+|
+|
+|
+|
+
+
+.. container:: twocol
+
+  .. container:: leftside
+
+    .. image:: ./images/breadboard.jfif
+      :width: 320 px
+      :height: 240 px
+      :alt: breadboard
+      :align: left
+
+  .. container:: rightside
+
+    `breadboard to connect jumper wires and the push buttons <https://www.amazon.ca/BB400-Solderless-Plug-BreadBoard-tie-points/dp/B0040Z1ERO>`_
+    
+
+
 |
 |
 |
@@ -45,19 +139,17 @@ You will need the following items:
 
   .. container:: leftside
 
-    .. image:: ./images/4148-00.jpg
+    .. image:: ./images/jumper wires.jfif
       :width: 320 px
       :height: 240 px
-      :alt: USB Cable
+      :alt: Jumper wires
       :align: left
 
   .. container:: rightside
 
-    `Pink and Purple Braided USB A to Micro B Cable - 2 meter long <https://www.adafruit.com/product/4148>`_
+    `jumper wires to connect your products together <https://www.sparkfun.com/products/11026>`_
     
-    PRODUCT ID: 4148
 
-    So you can move your CircuitPython code onto the PyBadge.
 
 |
 |
@@ -65,55 +157,7 @@ You will need the following items:
 |
 |
 
-You might also want:
-
-.. container:: twocol
-
-  .. container:: leftside
-
-    .. image:: ./images/3898-00.jpg
-      :width: 320 px
-      :height: 240 px
-      :alt: Lipo Battery
-      :align: left
-
-  .. container:: rightside
-
-    `Lithium Ion Polymer Battery Ideal For Feathers - 3.7V 400mAh <https://www.adafruit.com/product/3898>`_
-    
-    PRODUCT ID: 3898
-
-    So that you can play the game without having it attached to a computer with a USB cable.
-
-|
-|
-|
-|
-|
-
-.. container:: twocol
-
-  .. container:: leftside
-
-    .. image:: ./images/3923-04.jpg
-      :width: 320 px
-      :height: 240 px
-      :alt: USB Cable
-      :align: left
-
-  .. container:: rightside
-
-    `Mini Oval Speaker - 8 Ohm 1 Watt <https://www.adafruit.com/product/4148>`_
-    
-    PRODUCT ID: 3923
-
-    If you want lots of sound. Be warned, the built in speaker is actually pretty loud.
-
-|
-|
-|
-|
-|
+you might also want:
 
 .. container:: twocol
 
@@ -141,5 +185,5 @@ You might also want:
   install/index
   ide/index
   image_bank/index
-  game/index
+  app/index
   menu/index

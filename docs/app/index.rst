@@ -1,7 +1,7 @@
 .. _game:
 
 ****
-Game
+App
 ****
 
 X
