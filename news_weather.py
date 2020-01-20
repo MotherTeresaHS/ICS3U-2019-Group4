@@ -10,6 +10,7 @@ from tkinter.ttk import *
 from time import strftime
 import datetime
 import requests
+from playsound import playsound
 # from PIL import ImageTk,Image
 
 root = Tk() 
@@ -20,27 +21,12 @@ root.title('Smart Clock')
 # opening images getting them ready
 # img = Image.open(r'C:\\Users\\marwa\\OneDrive\\Pictures\\cloudy.gif') 
 
-# Styling the label widget
-
-
-
-# label19 = Label(root, text = "", font = ('calibri', 12),  foreground = 'white', background = 'black')
-
-
-# label.pack(anchor = 'center')
-
-
-# label19.grid(row = 13, column = 2)
-
-# label.grid(row = 5, column = 1)
-
 
 # adding an image to tkinter
 # canvas=Canvas(root,width=300,height=480)
 # image=ImageTk.PhotoImage(Image.open("C:\\Users\\marwa\\OneDrive\\Pictures\\cloudy.gif"))
 # label = Label(image=image)
 
-#label.grid(row = 14, column = 2)
 
 
 def news():
