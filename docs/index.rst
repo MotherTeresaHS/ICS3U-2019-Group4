@@ -160,7 +160,7 @@ you might also want:
 
   .. container:: leftside
 
-    .. image:: ./images/printed_case.jpg
+    .. image:: ./images/3d_case.PNG
       :width: 320 px
       :height: 240 px
       :alt: USB Cable
