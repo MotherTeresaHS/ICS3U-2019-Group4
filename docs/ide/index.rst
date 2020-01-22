@@ -7,7 +7,7 @@ One of the great things about raspbbery pi  is that it is just a small sized a c
 
  your best beat for an IDE is `Thonny Editor <https://thonny.org/>`_. it comes installed on the raspbbery pi. It works seamlessly and it will give you debugging information.
 
-.. figure:: ./circuitpython_mu-front-page.png
+.. figure:: ./thonny_editor.png
    :width: 480 px
    :alt: Thonny Editor
    :align: center
@@ -28,7 +28,7 @@ Yes, you know that first program you should always run when starting a new codin
 
 As soon as you save the file onto the pi, the terminal should come up and you should see something like:
 
-.. figure:: ./hello_world.png
+.. figure:: ./hello_world.jfif
    :width: 480 px
    :alt: Hello, World!
    :align: center
