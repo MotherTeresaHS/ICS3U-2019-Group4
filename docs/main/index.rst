@@ -53,3 +53,17 @@ After showing the time I will make the if statements for the buttons so that if 
 ============
 
 For each if statment i made the frames to get forgotten and then shown again if the button they are assigned is called except for button 3 which imports calls another script which is for the alarm.
+
+This is what it should look like:
+
+.. image:: ./time.jpg
+      :width: 320 px
+      :height: 240 px
+      
+=====
+
+and here how should you wiring should look like :
+
+.. image:: ./diagram.jpg
+      :width: 320 px
+      :height: 240 px
