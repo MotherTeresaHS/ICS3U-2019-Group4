@@ -19,6 +19,6 @@ As you can see it is exactly the same code as the main function time but we chan
 
 This is what it should look like:
 
-.. image:: ./time/time.jpg
+.. image:: ./time.jpg
       :width: 320 px
       :height: 240 px

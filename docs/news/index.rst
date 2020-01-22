@@ -38,6 +38,6 @@ After creating the label you will call the json file in requests then you will g
 
 This is what it should look like:
 
-.. image:: ./news/news.jpg
+.. image:: ./news.jpg
       :width: 320 px
       :height: 240 px

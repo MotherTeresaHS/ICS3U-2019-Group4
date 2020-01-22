@@ -167,6 +167,6 @@ So after creating the labels and showing them in the gui using grid. we are goin
 
 This is what it should look like:
 
-.. image:: ./weather/weather.PNG
+.. image:: ./weather.PNG
       :width: 320 px
       :height: 240 px
