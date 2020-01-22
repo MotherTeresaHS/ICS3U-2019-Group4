@@ -1,4 +1,4 @@
-.. Main:
+.. Main_function:
 
 Main function
 ==========
