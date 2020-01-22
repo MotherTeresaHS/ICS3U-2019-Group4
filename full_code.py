@@ -30,7 +30,7 @@ button5 = Button(16)
 
 # creating frames for each function
 
-news_frame = tk.Frame(root, bg='black')
+news_frame = tk.Frame(root, bg='grey')
 news_frame.grid()
 
 weather_frame = tk.Frame(root, bg='sky blue')
@@ -56,9 +56,9 @@ def calendar():
 def news():
     # This function runs the news
 
-    root.configure(background="black")
+    root.configure(background="grey")
     label = Label(news_frame, text="NEWS", font=('calibri', 25),
-                  foreground='white', background='black')
+                  foreground='white', background='grey')
     label.grid()
 
     url = 'https://newsapi.org/v1/articles?source=bbc-news&sortBy=top&apikey=e4ba43e5a4e54ab8a1d130127eeb888a'
@@ -72,7 +72,7 @@ def news():
     # creating a list to accept api calls
 
     lstbox = Listbox(news_frame)
-    lstbox.config(bg='black', fg='white', width='100', height='30',
+    lstbox.config(bg='grey', fg='white', width='100', height='30',
                   font='Helvetica')
     lstbox.grid()
 
@@ -89,7 +89,7 @@ def forecast():
     root.configure(background="sky blue")
     label = Label(weather_frame, text="Weather", font=('calibri', 25),
                   foreground='yellow', background='sky blue')
-    label2 = Label(weather_frame, text="clouds :", font=('calibri', 16),
+    label2 = Label(weather_frame, text="Humidity (in percent) :", font=('calibri', 16),
                    foreground='white', background='sky blue')
     label3 = Label(weather_frame, text="", font=('calibri', 12),
                    foreground='white', background='sky blue')
@@ -132,8 +132,8 @@ def forecast():
     # showing the label in the gui in a ccertain location through grid
 
     label.grid(row=1, column=1)
-    label2.grid(row=5, column=0)
-    label3.grid(row=5, column=2)
+    label2.grid(row=13, column=0)
+    label3.grid(row=13, column=2)
     label4.grid(row=6, column=0)
     label5.grid(row=6, column=2)
     label6.grid(row=7, column=0)
@@ -148,8 +148,8 @@ def forecast():
     label15.grid(row=11, column=2)
     label16.grid(row=12, column=0)
     label17.grid(row=12, column=2)
-    label20.grid(row=13, column=0)
-    label21.grid(row=13, column=2)
+    label20.grid(row=5, column=0)
+    label21.grid(row=5, column=2)
 
     # calling the api
 
@@ -164,7 +164,6 @@ def forecast():
 
     # asks the api for weather details
 
-    clouds = ottawa.will_have_clouds()
     fog = ottawa.will_have_fog()
     rain = ottawa.will_have_rain()
     snow = ottawa.will_have_snow()
@@ -209,14 +208,14 @@ def forecast():
         fog = "there is fog today"
     else:
         fog = "there is no fog today"
-    if clouds == 1:
-        clouds = "there is clouds today "
-    else:
-        clouds = "there is no clouds today"
+#    if clouds == 1:
+#        clouds = "there is clouds today "
+#    else:
+#        clouds = "there is no clouds today"
 
     # showing the labels
 
-    label3.config(text=clouds)
+    
     label5.config(text=rain)
     label7.config(text=snow)
     label9.config(text=fog)
@@ -226,6 +225,8 @@ def forecast():
     ott = owm.weather_at_place('Ottawa, Canada')
     weather = ott.get_weather()
 
+    humidity = weather.get_humidity()
+    label3.config(text=humidity)
     temp = weather.get_temperature('celsius')['temp']
     temp = round(temp)
     label11.config(text=temp)
@@ -298,3 +299,4 @@ if __name__ == "__main__":
     main()
 
 root.mainloop()
+
