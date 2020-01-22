@@ -94,30 +94,30 @@ In this function we are going to show the weather details. first we will create 
 
     # shows images depending on weather state
 
-#    if snow == 1 or clouds and snow == 1:
-#        load = Image.open("snow.jpeg")
-#        render = ImageTk.PhotoImage(load)
-#        img = Label(root, image=render)
-#        img.image = render
-#        img.place(x=650, y=40)
-#    elif clouds == 0:
-#        load = Image.open("sun.jpeg")
-#        render = ImageTk.PhotoImage(load)
-#        img = Label(root, image=render)
-#        img.image = render
-#        img.place(x=650, y=40)
-#    if snow and rain and clouds == 1:
-#        Image.open("mix.jpeg")
-#        render = ImageTk.PhotoImage(load)
-#        img = Label(root, image=render)
-#        img.image = render
-#        img.place(x=650, y=40)
-#    elif clouds == 0:
-#        Image.open("sun.jpeg")
-#        render = ImageTk.PhotoImage(load)
-#        img = Label(root, image=render)
-#        img.image = render
-#        img.place(x=650, y=40)
+    #    if snow == 1 or clouds and snow == 1:
+    #        load = Image.open("snow.jpeg")
+    #        render = ImageTk.PhotoImage(load)
+    #        img = Label(root, image=render)
+    #        img.image = render
+    #        img.place(x=650, y=40)
+    #    elif clouds == 0:
+    #        load = Image.open("sun.jpeg")
+    #        render = ImageTk.PhotoImage(load)
+    #        img = Label(root, image=render)
+    #        img.image = render
+    #        img.place(x=650, y=40)
+    #    if snow and rain and clouds == 1:
+    #        Image.open("mix.jpeg")
+    #        render = ImageTk.PhotoImage(load)
+    #        img = Label(root, image=render)
+    #        img.image = render
+    #        img.place(x=650, y=40)
+    #    elif clouds == 0:
+    #        Image.open("sun.jpeg")
+    #        render = ImageTk.PhotoImage(load)
+    #        img = Label(root, image=render)
+    #        img.image = render
+    #        img.place(x=650, y=40)
     # depending on weather state show if it's happening or no
 
     if rain == 1:
