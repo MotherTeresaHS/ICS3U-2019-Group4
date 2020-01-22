@@ -183,4 +183,5 @@ you might also want:
   ide/index
   image_bank/index
   app/index
-  menu/index
+  weather/index
+  
