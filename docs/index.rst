@@ -181,7 +181,12 @@ you might also want:
   self
   install/index
   ide/index
-  image_bank/index
   app/index
+  libraries/index
+  main/index
   weather/index
+  news/index
+  calendar/index
+  alarm/index
+  
   
