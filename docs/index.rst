@@ -188,5 +188,6 @@ you might also want:
   news/index
   calendar/index
   alarm/index
+  time/index
   
   
