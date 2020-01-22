@@ -2,7 +2,7 @@
 Install Raspian
 =====================
 
-.. figure:: ./loading_circuitpython.gif
+.. figure:: ./install_raspian.gif
    :width: 480 px
    :alt: PyBadge UF2
    :align: center
