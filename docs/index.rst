@@ -9,7 +9,7 @@ Home
     </iframe>
   </div>
 
-In this project we will be making a smart clock for the `Raspbbery pi <https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/>`_. We will be using an app that we will build using `Tkinter module <https://docs.python.org/2/library/tkinter.html>`  to create a smart clock. The we will be using more than one library to make it easy to the clock and other widgets, with helper libraries for sound. The app can also work on other variants of devices, like windows and mac. The full completed app code can be found `here <https://github.com/MotherTeresaHS/ICS3U-2019-Group4>`_.
+In this project we will be making a smart clock for the `Raspbbery pi <https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/>`_. We will be using an app that we will build using Tkinter module to create a smart clock. The we will be using more than one library to make it easy to the clock and other widgets, with helper libraries for sound. The app can also work on other variants of devices, like windows and mac. The full completed app code can be found `here <https://github.com/MotherTeresaHS/ICS3U-2019-Group4>`_.
 
 The guide assumes that you have prior coding experience, hopefully in Python. It is designed to use just introductory concepts. No Object Oriented Programming (OOP) are used so that students in particular that have completed their first course in coding and know just variables, if statements, loops, functions and dictionaries will be able to follow along.
 
@@ -21,7 +21,7 @@ You will need the following items:
 
   .. container:: leftside
 
-    .. image:: ./images/raspberry pi.jfif
+    .. image:: ./images/raspberry_pi.jfif
       :width: 320 px
       :height: 240 px
       :alt: Raspbbery Pi 3 B+
@@ -45,7 +45,7 @@ You will need the following items:
 
   .. container:: leftside
 
-    .. image:: ./images/lcd screen.jfif
+    .. image:: ./images/lcd_screen.jfif
       :width: 320 px
       :height: 240 px
       :alt: LCD Screen
@@ -69,7 +69,7 @@ You will need the following items:
 
   .. container:: leftside
 
-    .. image:: ./images/push button.jfif
+    .. image:: ./images/push_button.jfif
       :width: 320 px
       :height: 240 px
       :alt: push button
@@ -136,7 +136,7 @@ You will need the following items:
 
   .. container:: leftside
 
-    .. image:: ./images/jumper wires.jfif
+    .. image:: ./images/jumper_wires.jfif
       :width: 320 px
       :height: 240 px
       :alt: Jumper wires
