@@ -1,17 +1,48 @@
+.. Gui:
 
-Background
+Creating the gui
 ==========
 
-Now that we have our image bank the next step is to actually get something showing up on the screen. The first thing we will do is fill the background with the first (or zeroith, if you are a computer scientist) image in our image bank. We will take the image and just place it over and over again, tiling it all over the screen. Since the image is just a plain white square, this will just make the entire background white for us.
+After writing your import statements you will go ahead and start in coding to show and create your Gui 
 
-Luckaly CircuitPython has some built in libraries that will make this much easier for us. We will be using 2, :file:`ugame` and :file:`stage`. We will import these 2 libraries at the top of our code and then we will write the following code to tile the background with the zeroith image:
+.. code-block:: python
 
-.. literalinclude:: ./code/code.py
-   :language: python
-   :caption: code.py
-   :linenos:
-   :emphasize-lines: 8,9,15-28
+   root = Tk()
+   root.title('Smart Clock')
+   root.geometry("+200+200")
+   
+   ===========
 
-.. note::
+The first line creates the Gui itself then the second one is to give it a title lastly the geometry is to resize your window or to open in a certain place in your desktop so since I am using a an lcd screen I need it to open in a certain place which is the middle of the screen
 
-   Full code and assets that can be copied onto PyBadge for this step can be found `here <https://github.com/MotherTeresaHS/ICS3U-2019-Group0/tree/master/docs/background/code>`_.
+.. code-block:: python
+
+    button1 = Button(26)
+    button2 = Button(19)
+    button3 = Button(6)
+    button4 = Button(5)
+    button5 = Button(16)
+=========
+
+Those lines are to set the buttons for each gpio pin I used. you will need the gpio zero library to do that. you can't run the buttons code from your pc or laptop it has to be from the raspberry pi so make sure to comment it in your pc or laptop
+
+.. code-block:: python
+
+    news_frame = tk.Frame(root, bg='black')
+    news_frame.grid()
+
+    weather_frame = tk.Frame(root, bg='sky blue')
+    weather_frame.grid()
+
+    clock_frame = tk.Frame(root, bg='black')
+    clock_frame.grid()
+
+    calendar_frame = tk.Frame(root, bg='white')
+    calendar_frame.grid()
+
+    time_frame = tk.Frame(root, bg='black')
+    time_frame.grid()
+
+==========
+
+Lastly this is were we create the frames for each function so that we would be able to hide it if the other function runs. So for each of them the first line is to create it and set the background color and the second is to make it show up in the Gui screen if called.
