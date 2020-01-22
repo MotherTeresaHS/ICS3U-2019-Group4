@@ -17,7 +17,6 @@ First we will start by displaying the date and time you will need the library of
 
 As you can see first I made a tkinter label with font = 40, text colour should be white and the background should be black. Then I sould it in my screen by the next line using grid, then I assigned a string to the time and date and lastly I added it to the label to show up in the gui.
 
-
 After showing the time I will make the if statements for the buttons so that if they were pressed to call the other functions.
 
  .. code-block:: python
@@ -54,4 +53,3 @@ After showing the time I will make the if statements for the buttons so that if 
 ============
 
 For each if statment i made the frames to get forgotten and then shown again if the button they are assigned is called except for button 3 which imports calls another script which is for the alarm.
- 
