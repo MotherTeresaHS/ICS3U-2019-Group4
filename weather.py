@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 
 # Created by Marwan Mashaly
@@ -15,14 +16,14 @@ root.configure(background = "sky blue")
 #root.geometry("320x480")
 
 #opening images getting them ready
-img = Image.open(r'C:\\Users\\marwa\\OneDrive\\Pictures\\cloudy.gif') 
+img = Image.open(r'/home/pi/Downloads/sno3.png') 
 
 # Styling the label widget
 
-label = Label(root, text = "Weather", font = ('calibri', 25), foreground = 'white', background = 'sky blue')
-label2 = Label(root, text = "clouds :", font = ('calibri', 16), foreground = 'white', background = 'sky blue')
+label = Label(root, text = "Weather", font = ('calibri', 25, 'bold'), foreground = 'yellow', background = 'sky blue')
+label2 = Label(root, text = "Clouds :", font = ('calibri', 16), foreground = 'white', background = 'sky blue')
 label3 = Label(root, text = "", font = ('calibri', 12), foreground = 'white', background = 'sky blue')
-label4 = Label(root, text = "rain : ",  font = ('calibri', 16),  foreground = 'white', background = 'sky blue')
+label4 = Label(root, text = "Rain : ",  font = ('calibri', 16),  foreground = 'white', background = 'sky blue')
 label5 = Label(root, text = "", font = ('calibri', 12),  foreground = 'white', background = 'sky blue')
 label6 = Label(root, text = "snow :", font = ('calibri', 16),  foreground = 'white', background = 'sky blue')
 label7 = Label(root, text = "", font = ('calibri', 12), foreground = 'white', background = 'sky blue')
@@ -41,9 +42,8 @@ label17 = Label(root, text = "", font = ('calibri', 12),  foreground = 'white', 
 label20 = Label(root, text = "location : ", font = ('calibri', 16),  foreground = 'white', background = 'sky blue')
 label21 = Label(root, text = "", font = ('calibri', 12),  foreground = 'white', background = 'sky blue')
 
-
 #label.pack(anchor = 'center')
-label.grid(row = 1, column = 1)
+label.grid(row = 1, column = 0)
 label2.grid(row = 5, column = 0)
 label3.grid(row = 5, column = 2)
 label4.grid(row = 6, column = 0)
@@ -145,3 +145,4 @@ if __name__ == "__main__":
     main()
 
 root.mainloop()
+

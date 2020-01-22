@@ -1,5 +1,5 @@
 
-Install CircuitPython
+Install Raspian
 =====================
 
 .. figure:: ./loading_circuitpython.gif
@@ -9,6 +9,6 @@ Install CircuitPython
 
    Clearing the PyBadge and loading the CircuitPython UF2 file
 
-Before doing anything else, you should delete everything already on your PyBadge and install the latest version of CircuitPython onto it. This ensures you have a clean build with all the latest updates and no leftover files floating around. Adafruit has an excellent quick start guide `here <https://learn.adafruit.com/adafruit-pybadge/installing-circuitpython>`_ to step you through the process of getting the latest build of CircuitPython onto your PyBadge. Adafruit also has a more detailed comprehensive version of all the steps with complete explanations `here <https://learn.adafruit.com/welcome-to-circuitpython/installing-circuitpython>`_ you can use, if this is your first time loading CircuitPython onto your PyBadge. 
+Before doing anything else, you should format your sd card and install the latest version of Raspian onto it. This ensures you have a clean build with all the latest updates and no leftover files floating around. Rasberry has an excellent quick start guide `here <https://www.raspberrypi.org/documentation/installation/installing-images/>`_ to step you through the process of getting the latest version of raspian onto your pi.
 
-Just a reminder, if you are having any problems loading CircuitPython onto your PyBadge, ensure that you are using a USB cable that not only provides power, but also provides a data link. Many USB cables you buy are only for charging, not transfering data as well. Once the CircuitPython is all loaded, come on back to continue the tutorial.
+Just a reminder, if you are having any problems loading Raspian onto your Pi, ensure that you are using the right programs and a functional micro sd card. Once the Raspian is all loaded, come on back to continue the tutorial.
