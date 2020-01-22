@@ -90,7 +90,7 @@ You will need the following items:
 
   .. container:: leftside
 
-    .. image:: ./images/charger.jfif
+    .. image:: ./images/power_supply.jfif
       :width: 320 px
       :height: 240 px
       :alt: Power supply
