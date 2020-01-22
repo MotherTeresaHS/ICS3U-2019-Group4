@@ -164,3 +164,9 @@ In this function we are going to show the weather details. first we will create 
 =========
 
 So after creating the labels and showing them in the gui using grid. we are going to call the api with and we will access it with the key that we have then we are going to get details for what is the weather in the next 3 hours in our location. After that we are going to get the data we wnat from the api and put it in the labels we created. you can also add images and you will find its code in here but I commented because since I am using an lcd screen there will be no space to place my image in the tkinter window. Don't forget if you are going to use the images to change the images name and put the images in the folders path also delete 4 spaces in front of each line. to ensure it's in the right place
+
+This is what it should look like:
+
+.. image:: ./weather/weather.PNG
+      :width: 320 px
+      :height: 240 px

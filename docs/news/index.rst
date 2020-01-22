@@ -35,3 +35,9 @@ For the news I have used  `News Api <https://newsapi.org/>`_  to get the data fr
 ===========
 
 After creating the label you will call the json file in requests then you will get a response and you will put it in a list as you can see in line 11 then you will create a tkinter list as you can see in line 16 and you will display by grid. Lastly you will display each time the list articles in order throught the other list we created.
+
+This is what it should look like:
+
+.. image:: ./news/news.jpg
+      :width: 320 px
+      :height: 240 px
