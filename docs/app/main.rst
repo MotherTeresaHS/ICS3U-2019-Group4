@@ -12,8 +12,7 @@ First we will start by displaying the date and time you will need the library of
     label18.grid(row=0, column=0)
     string = strftime('%H:%M:%S \n%d-%m-%Y')
     label18.config(text=string)
-    label18.after(1000, main)
-    
+    label18.after(1000, main) 
 ===========
 
 As you can see first I made a tkinter label with font = 40, text colour should be white and the background should be black. Then I sould it in my screen by the next line using grid, then I assigned a string to the time and date and lastly I added it to the label to show up in the gui.
