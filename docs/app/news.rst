@@ -6,7 +6,6 @@ News
 For the news I have used  `News Api <https://newsapi.org/>`_  to get the data from the BBC and display it in my gui. After you create the frame you will call it inside the label that you will create 
 
 .. code-block:: python
-  :linenos:
     
     root.configure(background="grey")
     label = Label(news_frame, text="NEWS", font=('calibri', 25),
