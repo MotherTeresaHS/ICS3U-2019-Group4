@@ -84,9 +84,6 @@ You will need the following items:
 |
 |
 |
-|
-|
-|
 
 
 .. container:: twocol
