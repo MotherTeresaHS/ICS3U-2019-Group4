@@ -19,6 +19,7 @@ from gpiozero import Button
 
 root = Tk()
 root.title('Smart Clock')
+root.geometry("+200+200")
 # root.configure(background = "black")
 
 # defining buttons
@@ -30,7 +31,7 @@ button5 = Button(16)
 
 # creating frames for each function
 
-news_frame = tk.Frame(root, bg='grey')
+news_frame = tk.Frame(root, bg='black')
 news_frame.grid()
 
 weather_frame = tk.Frame(root, bg='sky blue')
@@ -89,7 +90,7 @@ def forecast():
     root.configure(background="sky blue")
     label = Label(weather_frame, text="Weather", font=('calibri', 25),
                   foreground='yellow', background='sky blue')
-    label2 = Label(weather_frame, text="Humidity (in percent) :", font=('calibri', 16),
+    label2 = Label(weather_frame, text="Humidity (in percentage) :", font=('calibri', 16),
                    foreground='white', background='sky blue')
     label3 = Label(weather_frame, text="", font=('calibri', 12),
                    foreground='white', background='sky blue')
@@ -227,6 +228,7 @@ def forecast():
 
     humidity = weather.get_humidity()
     label3.config(text=humidity)
+
     temp = weather.get_temperature('celsius')['temp']
     temp = round(temp)
     label11.config(text=temp)
@@ -299,4 +301,3 @@ if __name__ == "__main__":
     main()
 
 root.mainloop()
-

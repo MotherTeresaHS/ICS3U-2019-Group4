@@ -46,3 +46,13 @@ Those lines are to set the buttons for each gpio pin I used. you will need the g
 ==========
 
 Lastly this is were we create the frames for each function so that we would be able to hide it if the other function runs. So for each of them the first line is to create it and set the background color and the second is to make it show up in the Gui screen if called.
+
+
+.. toctree::
+  :maxdepth: 2
+  :hidden:
+  :titlesonly:
+
+  self
+  weather/index
+  news/index
