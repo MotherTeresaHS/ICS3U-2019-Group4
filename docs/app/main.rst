@@ -23,7 +23,7 @@ After showing the time I will make the if statements for the buttons so that if 
 
  .. code-block:: python
      
-     if button1.is_pressed:
+    if button1.is_pressed:
         weather_frame.grid_forget()
         clock_frame.grid_forget()
         calendar_frame.grid_forget()
