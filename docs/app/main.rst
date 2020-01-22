@@ -56,4 +56,17 @@ After showing the time I will make the if statements for the buttons so that if 
 
 For each if statment i made the frames to get forgotten and then shown again if the button they are assigned is called except for button 3 which imports calls another script wwhich is for the alarm.
  
+ lastly this is what it should look like:
+ 
+ .. container:: twocol
+
+  .. container:: leftside
+
+    .. image:: ./images/time .jpg
+      :width: 320 px
+      :height: 240 px
+      :alt: breadboard
+      :align: left
+
+  .. container:: rightside
  
