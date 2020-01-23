@@ -90,7 +90,7 @@ You will need the following items:
 
   .. container:: leftside
 
-    .. image:: ./images/charger.jfif
+    .. image:: ./images/power_supply.jfif
       :width: 320 px
       :height: 240 px
       :alt: Power supply
@@ -160,7 +160,7 @@ you might also want:
 
   .. container:: leftside
 
-    .. image:: ./images/printed_case.jpg
+    .. image:: ./images/3d_case.PNG
       :width: 320 px
       :height: 240 px
       :alt: USB Cable
@@ -181,6 +181,13 @@ you might also want:
   self
   install/index
   ide/index
-  image_bank/index
   app/index
-  menu/index
+  libraries/index
+  main/index
+  weather/index
+  news/index
+  calendar/index
+  alarm/index
+  time/index
+  
+  
